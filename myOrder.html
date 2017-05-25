@@ -1,0 +1,302 @@
+<html lang="en" data-dpr="1" style="font-size: 34.7222px;"><head>
+    <meta charset="UTF-8">
+    <title>养车壹号</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="format-detection" content="telephone=no">
+    <link rel="stylesheet" href="http://wechat.anhui-tech.com/dist/css/min/my-order.min.css">
+    <script src="http://wechat.anhui-tech.com/scripts/common/fontsize.js"></script>
+</head>
+<body style="background:#f0f1f5;">
+    <section class="loading" id="loading" style="display: none;">
+    <div>
+        <div class="loading-pic"><img src="http://wechat.anhui-tech.com/images/icon-ft/loading.gif"></div>
+        <p class="loading-text">Loading</p>
+    </div>
+</section>    <header class="ah-header2">
+        <a href="/user/personal" class="goback"><i></i></a>
+        <em class="title">
+            <p>我的订单</p>
+        </em>
+    </header>
+    <div class="data-order-u">
+        <ul class="clearfix">
+            <li class="" data-code="all"><a href="javascript:void(0)">全部</a></li>
+            <li data-code="waitConfirm" class="active"><a href="javascript:void(0)">待确认</a></li>
+            <li data-code="confirmed" class=""><a href="javascript:void(0)">已确认</a></li>
+            <li data-code="waitRate" class=""><a href="javascript:void(0)">待评价</a></li>
+        </ul>
+    </div>
+    <div class="data-order" style="margin-top:2.32rem;">
+        <!-- 全部订单 -->
+        <div class="data-box-list" style="display: none;">
+                        <div class="data-show">
+                <img src="/images/icon-ft/order-kong@2x.png">
+                <p>您没有相关订单哦</p>
+            </div>
+        </div>
+
+        <!-- 待确认订单 -->
+        <div class="data-box-list">
+                        <div class="data-show">
+                <img src="/images/icon-ft/order-kong@2x.png">
+                <p>您没有相关订单哦</p>
+            </div>
+        </div>
+
+        <!-- 已确认订单 -->
+        <div class="data-box-list" style="display: none;">
+                        <div class="data-show">
+                <img src="/images/icon-ft/order-kong@2x.png">
+                <p>您没有相关订单哦</p>
+            </div>
+        </div>
+
+        <!-- 已完成订单 -->
+        <div class="data-box-list" style="display: none;">
+                        <div class="data-show">
+                <img src="/images/icon-ft/order-kong@2x.png">
+                <p>您没有相关订单哦</p>
+            </div>
+        </div>
+    </div>
+    <div class="ah-none"><link href="http://wechat.anhui-tech.com/dist/css/min/animation/animate.min.css" type="text/css" rel="stylesheet">
+<section class="ah-footer-top"></section>
+<footer>
+    <div class="ah-footer clearfix">
+        <div>
+            <a href="/" class="home">
+                <img src="http://wechat.anhui-tech.com/images/icon-ft/home-new@2x.png" alt="">
+                <p class="f-txt">首页</p>
+            </a>
+            <!-- <a href="/garage"  >
+                <img style="width:.70rem;height:.70rem;margin-top:.1rem" src="http://wechat.anhui-tech.com/images/icon-ft/garage@3x.png" alt="">
+                <p class='f-txt'>我的车库</p>
+            </a> -->
+            <!-- <a href="/maintenance" class="maintain">
+                <img src="http://wechat.anhui-tech.com/images/icon-ft/maintain@2x.png" alt="">
+                <p class='f-txt'>保养</p>
+            </a> -->
+            <a href="javascript:;" class="maintain">
+                <i></i>
+                <p class="f-txt">保养</p>
+            </a>
+            <a href="/user/personal" class="user cur">
+                <img src="http://wechat.anhui-tech.com/images/icon-ft/user-h@2x.png" alt="">
+                <p class="f-txt">我的</p>
+            </a>
+        </div>
+    </div>
+</footer>
+
+<section class="chose-maintain">
+    <div>
+        <h3 class="slogan"><img src="http://wechat.anhui-tech.com/images/icon-ft/slogan@2x.png"></h3>
+        <ul class="chose-list clearfix">
+            <li class="door">
+                <a href="http://wechat.anhui-tech.com/order/choseProduct?place=1">
+                    <i></i>
+                    <span>上门保养</span>
+                </a>
+            </li>
+            <li class="shop">
+                <a href="http://wechat.anhui-tech.com/order/choseProduct?place=2">
+                    <i></i>
+                    <span>到店保养</span>
+                </a>
+            </li>
+        </ul>
+        <div class="chose-maintain-btn"><i></i></div>
+    </div>
+</section>
+
+<script src="http://wechat.anhui-tech.com/scripts/lib/zepto.min.js"></script>
+<script src="http://wechat.anhui-tech.com/scripts/common/ahPlugin.js"></script>
+<!--微信分享-->
+<script type="text/javascript" src="http://res.wx.qq.com/open/js/jweixin-1.0.0.js"></script>
+<!--chose maintain-->
+<script type="text/javascript">
+    $(function(){
+        $('.maintain').on('click',function(){
+            $('.chose-maintain').removeClass('animated fadeOut').addClass('animated fadeIn').show();
+            $('.ah-footer').removeClass('animated fadeIn').addClass('animated fadeOut')
+            $('.door').show().removeClass('animated fadeOutDownBig').addClass('animated bounceInUp');
+            $('.shop').show().removeClass('animated fadeOutDownBig').addClass('animated bounceInUp');
+        });
+        $('.chose-maintain-btn').on('click',function(){
+            $('.door').removeClass('animated bounceInUp').addClass('animated fadeOutDownBig');
+            $('.shop').removeClass('animated bounceInUp').addClass('animated fadeOutDownBig');
+            setTimeout(function(){
+                $('.chose-maintain').removeClass('animated fadeIn').addClass('animated fadeOut');
+                $('.ah-footer').removeClass('animated fadeOut').addClass('animated fadeIn')
+            }, 600);
+            setTimeout(function(){
+               $('.chose-maintain').hide();
+            }, 1000);
+        });
+
+    })
+</script>
+<!--weixin share-->
+<script type="text/javascript">
+
+    function onBridgeReady(){
+        WeixinJSBridge.call('showOptionMenu');
+    }
+    //兼容
+    if (typeof WeixinJSBridge == "undefined"){
+        if( document.addEventListener ){
+            document.addEventListener('WeixinJSBridgeReady', onBridgeReady, false);
+        }else if (document.attachEvent){
+            document.attachEvent('WeixinJSBridgeReady', onBridgeReady);
+            document.attachEvent('onWeixinJSBridgeReady', onBridgeReady);
+        }
+    }else{
+        onBridgeReady();
+    }
+    //jssdk 配置
+    wx.config({
+        debug: false, // 开启调试模式  false是关闭 true是开启
+        appId: 'wx0bff00dd2acff023',
+        timestamp: "1495594961",
+        nonceStr: "UoopBK6MWKx5oV0p",
+        signature: "6150c5bfcf92575743822c18b00e07c84efead90",
+        jsApiList: ['onMenuShareTimeline','onMenuShareAppMessage'] //
+    });
+    //调取朋友圈分享 和分享给朋友
+    wx.ready(function(){
+        //分享到朋友圈
+        wx.onMenuShareTimeline({
+            title: '欢迎使用养车壹号', // 分享标题
+            link: 'http://wechat.anhui-tech.com/user/other_share?invite_code='+"4GFNAXYP" , // 分享链接
+            imgUrl: 'http://pic.anhui-tech.com/wechat/share_logo.jpg', // 分享图标
+            success: function () {
+            // 用户确认分享后执行的回调函数
+                if($('.share_mask').length>0){
+                    $('.share_mask').hide();
+                    new TopAlert({
+                        data: '分享成功'
+                    });
+                }else{
+                    new TopAlert({
+                        data: '分享成功'
+                    });
+                }
+            },
+            cancel: function () {
+            // 用户取消分享后执行的回调函数
+            }
+        });
+        //分享给朋友
+        wx.onMenuShareAppMessage({
+            title: '欢迎使用养车壹号', // 分享标题
+            link: 'http://wechat.anhui-tech.com/user/other_share?invite_code='+"4GFNAXYP" , // 分享链接
+            imgUrl: 'http://pic.anhui-tech.com/wechat/share_logo.jpg', // 分享图标
+            desc: '养车壹号 — 您的一站式汽车养护管家，马上注册开始体验！', // 分享描述
+            type: 'link',
+            success: function () {
+                // 用户确认分享后执行的回调函数
+                if($('.share_mask').length>0){
+                    $('.share_mask').hide();
+                    new TopAlert({
+                        data: '分享成功'
+                    });
+
+                }else{
+                    new TopAlert({
+                        data: '分享成功'
+                    });
+                }
+            },
+            cancel: function () {
+            // 用户取消分享后执行的回调函数
+            }
+        });
+    });
+</script>
+<!--统计代码-->
+<script type="text/javascript" src="http://pingjs.qq.com/h5/stats.js" name="MTAH5" sid="500053157"></script>
+
+</div>
+
+
+
+<script src="http://wechat.anhui-tech.com/scripts/lib/zepto.min.js"></script>
+<script src="http://wechat.anhui-tech.com/scripts/frozen.js"></script>
+<script src="http://wechat.anhui-tech.com/scripts/common/ahPlugin.js"></script>
+<script type="text/javascript">
+    $(function(){
+        if($('.data-order>div').find('div').attr('id')=='data-order-list'){
+            $('.data-show').hide();
+        }else{
+            $('.data-show').show();
+        }
+        var url = window.location.href;
+        if(url.indexOf('tabCode')>=0){
+            var tabCode = url.split('tabCode=')[1];
+            $('.data-order-u ul li').each(function(index){
+                var me =$(this);
+                if(me.attr('data-code')==tabCode){
+                    $(me).addClass('active').siblings().removeClass('active');
+                    $('.data-order>div').eq(index).show().siblings().hide();
+
+                    if($('.data-order>div').eq(index).find('div').attr('id')=='data-order-list'){
+                        $('.data-show').hide();
+                    }else{
+                        $('.data-show').show();
+                    }
+
+                }
+            });
+
+        }
+        $('.data-order-u ul li').on('click',function(){
+            $('.data-order>div').eq($(this).index()).show().siblings().hide();
+            $(this).addClass('active').siblings().removeClass('active');
+            if($('.data-order>div').eq($(this).index()).find('div').attr('id')=='data-order-list'){
+                $('.data-show').hide();
+            }else{
+                $('.data-show').show();
+            }
+        });
+
+        
+
+        var orderId = ''
+        $('.btnBox b').on('click',function(){
+            var _me = $(this);
+            orderId = _me.attr('data-order-id');
+            new Dialog({
+                data: '<div class="state1"><h3 class="title">确定要取消这个订单吗 T^T</h3></div>',
+                button: ['<span class="btn" data-opt="Y">取消订单</span>','<span class="btn be" data-opt="F">再想想</span>'],
+                confirm: function() {
+                play(orderId);
+                }
+            });
+            return false;
+        });
+
+        $('.has>div b').on('click',function(){
+            if($(this).hasClass('active')){
+            return false;
+            }
+        });
+
+        function play(orderId){
+            $.ajax({
+                type:'post',
+                url:'/order/userCancel',
+                data:{'order_id':orderId},
+                beforeSend:function(){
+                },
+                success:function(data){
+                    console.log(data);
+                    location.reload();
+                },
+                complete:function(){
+
+                }
+            });
+        }
+    });
+</script></body></html>

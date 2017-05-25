@@ -1,0 +1,158 @@
+<!DOCTYPE HTML>
+<html style="font-size: 34.7222px;">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+<meta name="apple-mobile-web-app-capable" content="yes" />
+<meta name="apple-mobile-web-app-status-bar-style" content="black" />
+<meta name="format-detection" content="telephone=no" />
+<meta name="keywords" content="微信,微信公众平台" />
+<meta name="description" content="微信公众平台自助引擎" />
+<title>商城首页</title>
+<link rel="stylesheet" type="text/css" href="css/style.css">
+<link rel="stylesheet" type="text/css" href="css/myCss.css">
+<link rel="stylesheet" type="text/css" href="css/font-awesome.min.css">
+<script type="text/javascript" src="js/jquery-1.10.2.min.js"></script>
+<script type="text/javascript" src="js/jquery.accordion.js"></script>
+<script type="text/javascript" src="js/unslider.min.js"></script>
+</head>
+
+<body ondragstart="return false;" onselectstart="return false;" oncontextmenu="return false" onselectstart="return false" 
+ondragstart="return false" onbeforecopy="return false" oncopy=document.selection.empty() onselect=document.selection.empty()> 
+<div id="page">
+	<div class="banner">
+		<ul>
+			<li style="background-image: url('images/4.jpg');">1</li>
+			<li style="background-image: url('images/3.jpg');">2</li>
+			<li style="background-image: url('images/1.jpg');">3</li>
+			<li style="background-image: url('images/2.jpg');">4</li>
+		</ul>
+	</div>
+	<div id="content">
+		
+		
+		<div class="box_exp">
+			<div class="login-box">
+				<button type="button" class="btn btn-primary" style="width:100%" >登录</button>
+			</div>
+			<div class="logined-box">
+
+                    <!-- <a href="/car/edit/103591/0/0">
+                        <div class="ld">
+                            <div class="icon">
+                                <p>
+                                    <img src="http://pic.anhui-tech.com/cms/carbrand/1449573986-20350.png" alt="">
+                                </p>
+                                                                    <em class="approve">未认证</em>
+                                                                </div>
+                        </div>
+                        <div class="rd">
+                            <h3>5系</h3>
+                            <h4>辽A57566</h4>
+                        </div>
+                    </a> -->
+
+			</div>
+		</div>
+
+		<div class="box_exp info_light">
+			<div class="info_integral">
+				<span class="title"><i class="icon-bookmark-empty"></i>到店专享</span>
+			</div>
+			<div style="display: block; overflow: hidden; opacity: 1;">
+				<div class="info_child">
+					<ul>
+						<li style="width:33%"><div class="line3"><a href="content.html"><i><img src="images/jichu.png"></i><span>基础保养</span></a></div></li>
+						<li style="width:33%"><div class="line3"><a href="content.html"><i><img src="images/airlvxin.png"></i><span>空气滤芯更换</span></a></div></li>
+						<li style="width:33%"><a href="content.html"><i><img src="images/kongtiao.png"></i><span>空调滤芯更换</span></a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+
+
+		<!-- <section class="home-box">
+	        <div class="home-banner">
+	                <p>秒杀</p>
+	                <div>
+	                    <span>倒计时</span>
+	                    <ul>
+	                        <li><a class="h">23小时</a> <b>:</b> <a class="f">59分</a> <b>:</b> <a class="m">59秒</a></li>
+	                    </ul>
+	                </div>
+	            </div>
+	        <div style="clear:both"></div>
+	        <dl>
+	            <dt><img src="images/item.png"></dt>
+	            <dd>
+	                <h2>大保养超值A套餐 送50元加油卡</h2>
+	                <p>大保养超值A套餐 送50元加油卡</p>
+	                 <span>￥300</span> 
+	                 <em>￥200</em> 
+	            </dd>
+	        </dl>
+	    </section> 
+
+    	<div class="ui-slider-bottom"></div>-->
+
+	    <section class="home-box">
+	            <a href="article1.html"><img src="http://wechat.anhui-tech.com/images/banner/pick2.jpg" alt="" width="100%"></a>
+	    </section>
+		
+		<div class="ui-slider-bottom"></div>
+
+		<section class="home-box">
+	            <a href="article1.html"><img src="http://wechat.anhui-tech.com/images/banner/pick2.jpg" alt="" width="100%"></a>
+	    </section>
+		
+		<div class="ui-slider-bottom"></div>
+
+		<div style="padding:15px;"></div>
+	</div>
+
+	<div id="nav-footer">
+		<footer>
+		    <div class="ah-footer clearfix">
+		        <div>
+		            <a href="index.html" class="home cur">
+		                <img src="images/home-new-h@2x.png" alt="">
+		                <p class="f-txt">首页</p>
+		            </a>
+		            <a href="javascript:;" class="maintain">
+		                <i></i>
+		                <p class="f-txt">保养</p>
+		            </a>
+		            <a href="personalCenter.html" class="user">
+		                <img src="images/user@2x.png" alt="">
+		                <p class="f-txt">我的</p>
+		            </a>
+		        </div>
+		    </div>
+		</footer>
+	</div>
+</div>
+
+
+
+
+
+
+
+<script>
+$(document).ready(function() {
+	$('.banner').unslider({
+		arrows: true,
+		fluid: true,
+		dots: true
+	});
+
+	$("#content").accordion({
+		alwaysOpen: false,
+		autoheight: false,
+		header: '.info_integral',
+		clearStyle: true
+	});
+});
+</script>
+</body>
+</html>
