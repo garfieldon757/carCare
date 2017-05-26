@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>养车壹号</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no" />
+    <meta name="format-detection" content="telephone=no">
+    <link rel="stylesheet" href="http://wechat.anhui-tech.com/dist/css/min/login.min.css">
+    <script src="http://wechat.anhui-tech.com/scripts/common/fontsize.js"></script>
+</head>
+<body>
+  <section class="loading" id="loading">
+    <div>
+        <div class="loading-pic"><img src="http://wechat.anhui-tech.com/images/icon-ft/loading.gif"></div>
+        <p class="loading-text">Loading</p>
+    </div>
+</section>    <!-- login -->
+    <div style="width: 100%;heigt:100%;overflow:hidden;top:0;bottom: 0px;position: absolute" class="bos">
+        <section class="ah-login">
+            <form action="http://wechat.anhui-tech.com/login" name="ah-login" method="post" id="loginform">
+                <div class="clearfix">
+                    <div class="phone ah-fl" style="width: 100%">
+                        <i style="background-image:url(http://wechat.anhui-tech.com/images/icon-ft/phone-icon@2x.png);"></i>
+                        <input type="username" class="username" value="输入用户名" data-val="输入用户名" id="username"/>
+                    </div>
+                </div>
+                <div class="clearfix" style=" margin-bottom: .3rem;">
+                    <div class="phone ah-fl" style="width: 100%">
+                        <i style="background-image:url(http://wechat.anhui-tech.com/images/icon-ft/phone-icon@2x.png);"></i>
+                        <input type="pwd" class="pwd" value="输入密码" data-val="输入密码" id="username"/>
+                    </div>
+                </div>
+                <div class="clearfix">
+                    <div class="phone ah-fl" style="width: 100%">
+                        <i style="background-image:url(http://wechat.anhui-tech.com/images/icon-ft/phone-icon@2x.png);"></i>
+                        <input type="pwdConfirm" class="pwdConfirm" value="密码确认" data-val="密码确认" id="username"/>
+                    </div>
+                </div>
+                <div class="submit-btn">
+                    <input type="button" class="sub" value="注册" id="login" style="background-color: #3B77DB;" />
+                </div>
+            </form>
+        </section>
+    </div>
+</body>
+<script src="http://wechat.anhui-tech.com/scripts/lib/zepto.min.js"></script>
+<script src="http://wechat.anhui-tech.com/scripts/common/ahPlugin.js"></script>
+<script src="http://wechat.anhui-tech.com/scripts/login.js"></script>
+<script type="text/javascript">
+    $(document).ready(function() {
+        // focus
+        
+        
+    })
+</script>
+</html>
+<script src="http://wechat.anhui-tech.com/scripts/frozen.js"></script>
+<script type="text/javascript">
+    window.addEventListener('load', function(){
+
+        var myScroll = new fz.Scroll('.bos', {
+            scrollY: true
+        });
+    })
+</script>

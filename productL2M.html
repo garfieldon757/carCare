@@ -1,0 +1,132 @@
+<!DOCTYPE HTML>
+<html style="font-size: 34.7222px;">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+<meta name="apple-mobile-web-app-capable" content="yes" />
+<meta name="apple-mobile-web-app-status-bar-style" content="black" />
+<meta name="format-detection" content="telephone=no" />
+<meta name="keywords" content="微信,微信公众平台" />
+<meta name="description" content="微信公众平台自助引擎" />
+<title>商城首页</title>
+<link rel="stylesheet" type="text/css" href="css/style.css">
+<link rel="stylesheet" type="text/css" href="css/myCss.css">
+<link rel="stylesheet" type="text/css" href="css/font-awesome.min.css">
+<link rel="stylesheet" href="http://wechat.anhui-tech.com/dist/css/min/personal.min.css">
+<script type="text/javascript" src="js/jquery-1.10.2.min.js"></script>
+<script type="text/javascript" src="js/jquery.accordion.js"></script>
+<script type="text/javascript" src="js/unslider.min.js"></script>
+</head>
+
+<body style="background: #f0f1f5;" ondragstart="return false;" onselectstart="return false;" oncontextmenu="return false" onselectstart="return false" 
+ondragstart="return false" onbeforecopy="return false" oncopy=document.selection.empty() onselect=document.selection.empty()> 
+<div id="page">
+	
+
+	<div class="data-pers-top">
+        <dl>
+            <dt><img src="http://wechat.anhui-tech.com/images/icon-ft/toux2.jpg"></dt>
+            <dd>18717354782</dd>
+        </dl>
+        <div class="exchange-code"><a href="http://wechat.anhui-tech.com/coupon/exchange_coupons">兑换优惠码</a></div>
+    </div>
+
+
+	<div id="content">
+
+
+		<div class="box_exp info_light">
+			<div class="info_integral">
+				<span class="title"><i class="icon-bookmark-empty"></i>到店专享</span>
+			</div>
+			<div style="display: block; overflow: hidden; opacity: 1;">
+				<div class="info_child">
+					<ul>
+						<li list2="" data-list="2" class="cur" style="width:33%">
+	                        <div class="item-img">
+	                            <img src="images/jichu.png">
+	                            <i class="mark"></i>
+	                        </div>
+	                        <div class="item-tit">基础保养</div>
+	                    </li>
+	                    <li list2="" data-list="2" class="cur" style="width:33%">
+	                        <div class="item-img">
+	                            <img src="images/airlvxin.png">
+	                            <i class="mark"></i>
+	                        </div>
+	                        <div class="item-tit">空气滤芯更换</div>
+	                    </li>
+	                    <li list2="" data-list="2" class="cur" style="width:33%">
+	                        <div class="item-img">
+	                            <img src="images/kongtiao.png">
+	                            <i class="mark"></i>
+	                        </div>
+	                        <div class="item-tit">空调滤芯更换</div>
+	                    </li>
+					</ul>
+				</div>
+			</div>
+		</div>
+
+
+		<div style="padding:15px;"></div>
+
+		
+
+	</div>
+
+	<div id="nav-footer">
+		<footer> 
+		        <div style="margin:8px 0;">
+					<a href="" id="next-step-btn" class="button button-block button-rounded button-caution button-large" style="width:100%;">
+						<i class="icon-shopping-cart"></i>
+						&nbsp;&nbsp;下一步
+					</a>
+				</div>
+		</footer>
+	</div>
+</div>
+
+
+
+
+
+
+
+<script>
+$(document).ready(function() {
+	$('.banner').unslider({
+		arrows: true,
+		fluid: true,
+		dots: true
+	});
+	$('.cur').on('click', function(){
+		var _this = $(this);
+		_this.find('i').toggle();//.css('display', 'block')
+	});
+	$('#next-step-btn').on('click', function(e){
+		e.preventDefault();
+		var service_chosen_array = $('.info_child ul li');
+		var item_chosen_array = [];
+		service_chosen_array.each(function(index, element){
+			if( $(element).find('.mark').css('display') == 'block' )
+			{
+				switch(index){
+					case 0:
+						item_chosen_array.push("常规保养");
+						break;
+					case 1:
+						item_chosen_array.push("空气滤芯更换");
+						break;
+					case 2:
+						item_chosen_array.push("空调滤芯更换");
+						break;
+				}
+			}
+		});
+		console.log(item_chosen_array);
+	});
+});
+</script>
+</body>
+</html>
