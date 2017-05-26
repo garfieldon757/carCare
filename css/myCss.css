@@ -1,3 +1,5 @@
+/**/
+
 /*confirmOrder.html*/
 .ah-sub-btn {
     display: block;
@@ -13,6 +15,68 @@
     border-radius: 0;
     z-index: 0;
 }
+.info_child {
+
+}
+.info_child .info {
+    margin: 0 5%;
+}
+.info_child .info p {
+    width: 22%;
+    display: block;
+    float: left;
+    text-align: left;
+    color: #2b2b2b;
+}
+.info_child .info div {
+    width: 60%;
+    float: left;
+    text-align: center;
+    color: #777;
+    border: none!important;
+    box-sizing: border-box;
+    height: 1.22rem;
+    text-align: right;
+}
+
+.data-product-list .product-name {
+    border-bottom: 1px solid #f1f1f1;
+    height: 1.22rem;
+    color: #777;
+    line-height: 1.22rem;
+    font-weight: 700;
+}
+.data-product-list div table {
+    width: 100%;
+}
+.data-product-list div table tr {
+    height: .82rem;
+}
+.data-product-list div table tr td {
+    color: #777;
+    font-size: .4rem;
+    line-height: .54rem;
+    padding: .16rem 0;
+}
+
+.info b {
+    width: 70%;
+    float: left;
+    color: #2b2b2b;
+    overflow: hidden;
+    font-weight: 700;
+}
+.info span {
+    text-align: right;
+    width: 29%;
+    float: right;
+    overflow: hidden;
+    color: #777;
+    font-weight: 700;
+    color: #eb3e3e;
+}
+
+
 
 /*productL2.html*/
 .chose-item-lsit .product-item {

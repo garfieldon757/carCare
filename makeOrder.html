@@ -26,7 +26,7 @@
                                     </div>
             </div>
             <div class="go-personal-btn">
-                <a href="/user/personal">返回个人中心</a>
+                <a href="personalCenter.html">返回个人中心</a>
             </div>
         </div>
     </section>
@@ -107,85 +107,6 @@
 
     })
 </script>
-<!--weixin share-->
-<script type="text/javascript">
-
-    function onBridgeReady(){
-        WeixinJSBridge.call('showOptionMenu');
-    }
-    //兼容
-    if (typeof WeixinJSBridge == "undefined"){
-        if( document.addEventListener ){
-            document.addEventListener('WeixinJSBridgeReady', onBridgeReady, false);
-        }else if (document.attachEvent){
-            document.attachEvent('WeixinJSBridgeReady', onBridgeReady);
-            document.attachEvent('onWeixinJSBridgeReady', onBridgeReady);
-        }
-    }else{
-        onBridgeReady();
-    }
-    //jssdk 配置
-    wx.config({
-        debug: false, // 开启调试模式  false是关闭 true是开启
-        appId: 'wx0bff00dd2acff023',
-        timestamp: "1495703174",
-        nonceStr: "yxfhaX3ELe6A9jVD",
-        signature: "ce06031a53863e88931272637ddf120a506efa3c",
-        jsApiList: ['onMenuShareTimeline','onMenuShareAppMessage'] //
-    });
-    //调取朋友圈分享 和分享给朋友
-    wx.ready(function(){
-        //分享到朋友圈
-        wx.onMenuShareTimeline({
-            title: '欢迎使用养车壹号', // 分享标题
-            link: 'http://wechat.anhui-tech.com/user/other_share?invite_code='+"4GFNAXYP" , // 分享链接
-            imgUrl: 'http://pic.anhui-tech.com/wechat/share_logo.jpg', // 分享图标
-            success: function () {
-            // 用户确认分享后执行的回调函数
-                if($('.share_mask').length>0){
-                    $('.share_mask').hide();
-                    new TopAlert({
-                        data: '分享成功'
-                    });
-                }else{
-                    new TopAlert({
-                        data: '分享成功'
-                    });
-                }
-            },
-            cancel: function () {
-            // 用户取消分享后执行的回调函数
-            }
-        });
-        //分享给朋友
-        wx.onMenuShareAppMessage({
-            title: '欢迎使用养车壹号', // 分享标题
-            link: 'http://wechat.anhui-tech.com/user/other_share?invite_code='+"4GFNAXYP" , // 分享链接
-            imgUrl: 'http://pic.anhui-tech.com/wechat/share_logo.jpg', // 分享图标
-            desc: '养车壹号 — 您的一站式汽车养护管家，马上注册开始体验！', // 分享描述
-            type: 'link',
-            success: function () {
-                // 用户确认分享后执行的回调函数
-                if($('.share_mask').length>0){
-                    $('.share_mask').hide();
-                    new TopAlert({
-                        data: '分享成功'
-                    });
-
-                }else{
-                    new TopAlert({
-                        data: '分享成功'
-                    });
-                }
-            },
-            cancel: function () {
-            // 用户取消分享后执行的回调函数
-            }
-        });
-    });
-</script>
-<!--统计代码-->
-<script type="text/javascript" src="http://pingjs.qq.com/h5/stats.js" name="MTAH5" sid="500053157"></script>
 
 </div>
 
