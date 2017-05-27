@@ -134,6 +134,9 @@ option {
 }
 
 /*confirmOrder.html*/
+.data-product-list {
+    margin: 0 5%;
+}
 .ah-sub-btn {
     display: block;
     width: 100%;
@@ -195,7 +198,7 @@ option {
     margin: 0 5%;
 }
 .info_child .info p {
-    width: 22%;
+    width: 28%;
     display: block;
     float: left;
     text-align: left;
@@ -303,8 +306,8 @@ option {
 .chose-item-lsit .l-left .l-warp {
     border: 1px solid #D7D7D7;
     border-radius: .08rem;
-    width: 1.94rem;
-    height: 1.94rem;
+    width: 1.64rem;
+    height: 1.64rem;
     margin-top: .28rem;
 }
 .chose-item-lsit .l-left img {
@@ -367,7 +370,7 @@ option {
     display: none;
 }
 .chose-item-lsit .con-edit .edit-product-count {
-    margin-left: 1.4rem;
+    margin-left: 1rem;
     margin-top: .74rem;
     width: 3.4rem;
     height: .98rem;
@@ -444,6 +447,8 @@ option {
 .ah-save-btn-two .s-left span {
     display: block;
     font-weight: 700;
+    font-size: .5rem;
+    margin: 0.1rem 3%;
 }
 .ah-save-btn-two .s-left b {
     display: block;
@@ -462,7 +467,7 @@ option {
 }
 .ah-save-btn-two .s-left span em {
     float: left;
-    margin-top: .13rem;
+    margin-top: .23rem;
     font-size: .58rem;
     line-height: .74rem;
     vertical-align: bottom;
@@ -668,6 +673,130 @@ h4 {
 .order-bottom a {
 	width: 50%
 }
+
+
+/*index.html登录信息框样式*/
+.default-vehicles {
+    width: 100%;
+    height: 1.8rem;
+    background: #FFF;
+    border-bottom: 1px solid #e4e6e8;
+}
+.default-vehicles>div {
+    height: 100%;
+}
+.default-vehicles .l-left {
+    width: 50%;
+    float: left;
+}
+.default-vehicles .l-left.not-login a {
+    color: #626262;
+    font-size: .42rem;
+    text-decoration: none;
+    display: inline-block;
+    padding-left: 25%
+}
+.default-vehicles .l-right.not-login a {
+    color: #626262;
+    font-size: .42rem;
+    text-decoration: none;
+    display: inline-block;
+    padding-left: 15%;
+}
+.default-vehicles .l-left .ld, .default-vehicles .l-right .ld {
+    /*padding-left: .6rem;*/
+    padding-top: .1rem;
+    float: left;
+    width: 30%;
+}
+.default-vehicles .l-left .icon, .default-vehicles .l-right .icon {
+    width: 1.32rem;
+    height: 1.32rem;
+    border: .16rem solid #dcdcdc;
+    position: relative;
+    border-radius: 50%;
+    box-sizing: border-box;
+    z-index: 5;
+}
+.default-vehicles .l-left .icon p, .default-vehicles .l-right .icon p {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    border-radius: 50%;
+    padding-top: .11rem;
+    text-align: center;
+}
+.default-vehicles .l-left .icon img, .default-vehicles .l-right .icon img {
+    width: .78rem;
+    height: .78rem;
+    display: inline-block;
+}
+.default-vehicles .l-left .approve, .default-vehicles .l-right .approve {
+    position: absolute;
+    left: 50%;
+    margin-left: -.49rem;
+    bottom: -.2rem;
+    color: #FFF;
+    width: .98rem;
+    height: .3rem;
+    background: #aeaeae;
+    border-radius: .3rem;
+    font-size: .2rem;
+    text-align: center;
+    line-height: .3rem;
+    overflow: hidden;
+}
+.default-vehicles .l-left .rd, .default-vehicles .l-right .rd {
+    padding-left: .5rem;
+    padding-top: .36rem;
+    float: left;
+    width: 70%;
+}
+.default-vehicles .l-left .rd h3, .default-vehicles .l-right .rd h3 {
+    width: 100%;
+    height: .58rem;
+    line-height: .58rem;
+    color: #626262;
+    font-size: .4rem;
+    overflow: hidden;
+}
+.default-vehicles .l-left .rd h4, .default-vehicles .l-right .rd h4 {
+    height: .44rem;
+    line-height: .44rem;
+    color: #979797;
+    font-size: .3rem;
+}
+.default-vehicles .l-right {
+    width: 50%;
+    float: right;
+}
+
+.default-vehicles .l-left.logined a, .default-vehicles .l-right.logined a {
+    color: #626262;
+    font-size: .42rem;
+    text-decoration: none;
+    display: inline-block;
+    padding-left: 10%;
+}
+/*.default-vehicles .not-login {
+    padding-left: 2.76rem;
+}*/
+.default-vehicles i {
+    height: 1.8rem;
+    background-image: url(../images/go-login@2x.png);
+    margin-right: .5rem;
+    width: .8rem;
+    background-size: .8rem;
+    background-repeat: no-repeat;
+    background-position: center;
+    float: left;
+}
+.default-vehicles .not-login span {
+    float: left;
+    height: 1.8rem;
+    line-height: 1.8rem;
+}
+
 
 /*index.html底部样式*/
 

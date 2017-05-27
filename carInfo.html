@@ -31,94 +31,124 @@ ondragstart="return false" onbeforecopy="return false" oncopy=document.selection
 
 	<section class="car-infor-box" style="position: static;">
 	    <div class="inner">
-	      <form action="http://wechat.anhui-tech.com/car/update" id="form" method="post" enctype="multipart/form-data">
-              <div class="form-box">
-	            <em>品牌车系</em>
-	            <a href="pickCarBrand.html" class="txt">5系</a>
-	          </div>
-	          <div class="form-box">
-	            <em>车辆年份</em>
-	            <p class="txt" id="carYear">
-	                                2017款
-	                            </p>
-	            <select name="model_year" class="model_year" id="model_year">
-	                                                <option value="2017款" selected="selected">2017款</option>
-	                                <option value="2015款">2015款</option>
-	                                <option value="2014款">2014款</option>
-	                                <option value="2013款">2013款</option>
-	                                <option value="2012款">2012款</option>
-	                                <option value="2011款">2011款</option>
-	                                <option value="2010款">2010款</option>
-	                                <option value="2009款">2009款</option>
-	                                <option value="2008款">2008款</option>
-	                                <option value="2007款">2007款</option>
-	                                <option value="2006款">2006款</option>
-	                                <option value="2005款">2005款</option>
-	                                <option value="2004款">2004款</option>
-	                                            </select>
-	            <i class="dir-right"></i>
-	          </div>
-	          <div class="form-box">
-	            <em>车辆车型</em>
-	            <p class="txt" id="carName">
-	                <span class="rtl">2017款 520Li 典雅型</span>
-	            </p>
-	            <select name="model_name" class="model_name" id="model_name"><option value="22018" selected="true">2017款 520Li 典雅型</option><option value="22019">2017款 525Li 领先型</option><option value="22020">2017款 525Li 豪华设计套装</option><option value="22021">2017款 528Li 领先型</option><option value="22022">2017款 528Li 豪华设计套装</option><option value="22023">2017款 528Li xDrive领先型</option><option value="22024">2017款 528Li xDrive豪华设计套装</option><option value="22025">2017款 535Li 领先型</option><option value="22026">2017款 535Li 行政型 豪华设计套装</option><option value="22027">2017款 530Le</option></select>
-	            <i class="dir-right"></i>
-	          </div>
-	          <div class="form-box">
-	            <em>车牌号码</em>
-	            <p class="brand" id="brandPre">
-	                辽
-	            </p>
-	            <select name="area" class="area brand">
-	                                                <option value="京">京</option>
-	                                <option value="津">津</option>
-	                                <option value="冀">冀</option>
-	                                <option value="晋">晋</option>
-	                                <option value="蒙">蒙</option>
-	                                <option value="辽" selected="selected">辽</option>
-	                                <option value="吉">吉</option>
-	                                <option value="黑">黑</option>
-	                                <option value="沪">沪</option>
-	                                <option value="苏">苏</option>
-	                                <option value="浙">浙</option>
-	                                <option value="皖">皖</option>
-	                                <option value="闽">闽</option>
-	                                <option value="赣">赣</option>
-	                                <option value="鲁">鲁</option>
-	                                <option value="豫">豫</option>
-	                                <option value="鄂">鄂</option>
-	                                <option value="湘">湘</option>
-	                                <option value="粤">粤</option>
-	                                <option value="桂">桂</option>
-	                                <option value="琼">琼</option>
-	                                <option value="渝">渝</option>
-	                                <option value="川">川</option>
-	                                <option value="贵">贵</option>
-	                                <option value="云">云</option>
-	                                <option value="藏">藏</option>
-	                                <option value="陕">陕</option>
-	                                <option value="甘">甘</option>
-	                                <option value="青">青</option>
-	                                <option value="宁">宁</option>
-	                                <option value="新">新</option>
-	                                <option value="港">港</option>
-	                                <option value="澳">澳</option>
-	                                <option value="台">台</option>
-	                                            </select>
-	            <input type="text" class="brand-input" name="car_no" value="A57566" maxlength="11" id="car_no">
-	          </div>
-	          <div class="form-box">
-	                      </div>
-	              </form>
+		      <form action="http://wechat.anhui-tech.com/car/update" id="form" method="post" enctype="multipart/form-data">
+		            
+			        <div class="form-box">
+			            <em>汽车品牌</em>
+			            <p class="txt" id="carYear">
+                            大众
+                        </p>
+			            <select name="model_year" class="model_year" id="model_year">
+			                                <option value="2017款" selected="selected">奥迪</option>
+			                                <option value="2015款">日产</option>
+			                                <option value="2014款">福特</option>
+			                                <option value="2013款">丰田</option>
+			                                <option value="2012款">别克</option>
+			                                <option value="2011款">本田</option>
+			                                <option value="2010款">奔驰</option>
+			                                <option value="2009款">宝马</option>
+			                                <option value="2008款">现代</option>
+			            </select>
+			            <i class="dir-right"></i>
+			        </div>
+			        <div class="form-box">
+			            <em>汽车车系</em>
+			            <p class="txt" id="carYear">
+	                        POLO
+	                    </p>
+			            <select name="model_year" class="model_year" id="model_year">
+			                                <option value="2017款" selected="selected">高尔</option>
+			                                <option value="2015款">POLO</option>
+			                                <option value="2014款">桑塔纳</option>
+			                                <option value="2013款">途安</option>
+			                                <option value="2012款">帕萨特</option>
+			                                <option value="2011款">朗逸</option>
+			            </select>
+			            <i class="dir-right"></i>
+			        </div>
+			        <div class="form-box">
+			            <em>车辆年份</em>
+			            <p class="txt" id="carYear">
+			                                2017款
+			                            </p>
+			            <select name="model_year" class="model_year" id="model_year">
+			                                                <option value="2017款" selected="selected">2017款</option>
+			                                <option value="2015款">2015款</option>
+			                                <option value="2014款">2014款</option>
+			                                <option value="2013款">2013款</option>
+			                                <option value="2012款">2012款</option>
+			                                <option value="2011款">2011款</option>
+			                                <option value="2010款">2010款</option>
+			                                <option value="2009款">2009款</option>
+			                                <option value="2008款">2008款</option>
+			                                <option value="2007款">2007款</option>
+			                                <option value="2006款">2006款</option>
+			                                <option value="2005款">2005款</option>
+			                                <option value="2004款">2004款</option>
+			                                            </select>
+			            <i class="dir-right"></i>
+			        </div>
+			        <div class="form-box">
+			            <em>车辆车型</em>
+			            <p class="txt" id="carName">
+			                <span class="rtl">2017款 520Li 典雅型</span>
+			            </p>
+			            <select name="model_name" class="model_name" id="model_name"><option value="22018" selected="true">2017款 520Li 典雅型</option><option value="22019">2017款 525Li 领先型</option><option value="22020">2017款 525Li 豪华设计套装</option><option value="22021">2017款 528Li 领先型</option><option value="22022">2017款 528Li 豪华设计套装</option><option value="22023">2017款 528Li xDrive领先型</option><option value="22024">2017款 528Li xDrive豪华设计套装</option><option value="22025">2017款 535Li 领先型</option><option value="22026">2017款 535Li 行政型 豪华设计套装</option><option value="22027">2017款 530Le</option></select>
+			            <i class="dir-right"></i>
+			        </div>
+			        <div class="form-box">
+			            <em>车牌号码</em>
+			            <p class="brand" id="brandPre">
+			                辽
+			            </p>
+			            <select name="area" class="area brand">
+		                                    <option value="京">京</option>
+			                                <option value="津">津</option>
+			                                <option value="冀">冀</option>
+			                                <option value="晋">晋</option>
+			                                <option value="蒙">蒙</option>
+			                                <option value="辽" selected="selected">辽</option>
+			                                <option value="吉">吉</option>
+			                                <option value="黑">黑</option>
+			                                <option value="沪">沪</option>
+			                                <option value="苏">苏</option>
+			                                <option value="浙">浙</option>
+			                                <option value="皖">皖</option>
+			                                <option value="闽">闽</option>
+			                                <option value="赣">赣</option>
+			                                <option value="鲁">鲁</option>
+			                                <option value="豫">豫</option>
+			                                <option value="鄂">鄂</option>
+			                                <option value="湘">湘</option>
+			                                <option value="粤">粤</option>
+			                                <option value="桂">桂</option>
+			                                <option value="琼">琼</option>
+			                                <option value="渝">渝</option>
+			                                <option value="川">川</option>
+			                                <option value="贵">贵</option>
+			                                <option value="云">云</option>
+			                                <option value="藏">藏</option>
+			                                <option value="陕">陕</option>
+			                                <option value="甘">甘</option>
+			                                <option value="青">青</option>
+			                                <option value="宁">宁</option>
+			                                <option value="新">新</option>
+			                                <option value="港">港</option>
+			                                <option value="澳">澳</option>
+			                                <option value="台">台</option>
+			                                            </select>
+			            <input type="text" class="brand-input" name="car_no" value="A57566" maxlength="11" id="car_no">
+			        </div>
+			        <div class="form-box">
+		            </div>
+	        </form>
 	    </div>
     </section>
 
 	<div id="nav-footer">
 		<footer>
 		     <div style="margin:8px 0;">
-					<a href="" id="next-step-btn" class="button button-block button-rounded button-caution button-large" style="width:100%; height: 1.2rem; padding: 0px 0px;     background: -webkit-linear-gradient(top, #3B77DB, #3B77DB);">
+					<a href="index.html" id="next-step-btn" class="button button-block button-rounded button-caution button-large" style="width:100%; height: 1.2rem; padding: 0px 0px;     background: -webkit-linear-gradient(top, #3B77DB, #3B77DB);">
 						&nbsp;&nbsp;确认
 					</a>
 				</div>

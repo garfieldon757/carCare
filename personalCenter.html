@@ -28,24 +28,23 @@
                     <dt><img src="http://wechat.anhui-tech.com/images/icon-ft/toux2.jpg"></dt>
                     <dd>18717354782</dd>
                 </dl>
-                <div class="exchange-code"><a href="http://wechat.anhui-tech.com/coupon/exchange_coupons">兑换优惠码</a></div>
             </div>
             <div class="data-pers-con">
                 <ul>
                     <li>
                         <div class="order-top">
-                            <a href="http://wechat.anhui-tech.com/user/myOrder" alt="">
+                            <a href="" alt="">
                                 <i style="background-image:url('http://wechat.anhui-tech.com/images/icon-ft/order-icon@2x.png')"></i>
                                 <span>我的订单</span>
                                 <b></b>
                             </a>
                         </div>
                         <div class="order-bottom">
-                            <a href="http://wechat.anhui-tech.com/user/myOrder?tabCode=waitConfirm" alt="">
+                            <a href="" alt="">
                                 <i style="background-image:url('http://wechat.anhui-tech.com/images/icon-ft/order-icon-1@2x.png')"></i>
                                 <span>待确认</span>
                             </a>
-                            <a href="http://wechat.anhui-tech.com/user/myOrder?tabCode=confirmed" alt="">
+                            <a href="" alt="">
                                 <i style="background-image:url('http://wechat.anhui-tech.com/images/icon-ft/order-icon-2@2x.png')"></i>
                                 <span>已确认</span>
                             </a>
@@ -54,7 +53,7 @@
                 </ul>
                 <ul>
                     <li>
-                        <a href="http://wechat.anhui-tech.com/garage" alt="" >
+                        <a href="" alt="" >
                             <i style="background-image:url('http://wechat.anhui-tech.com/images/icon-ft/garage-icon@2x.png')"></i>
                             <span>我的车库</span>
                             <b></b>
@@ -85,7 +84,7 @@
                         </a>
                     </li> -->
                     <li>
-                        <a href="http://wechat.anhui-tech.com/aboutUs" alt="">
+                        <a href="" alt="">
                             <i style="background-image:url('http://wechat.anhui-tech.com/images/icon-ft/about-icon@2x.png')"></i>
                             <span>关于我们</span>
                             <b></b>
@@ -106,30 +105,31 @@
             
         </div>
     </div>
-    <link href="http://wechat.anhui-tech.com/dist/css/min/animation/animate.min.css" type="text/css" rel="stylesheet"></link>
-    <section class="ah-footer-top"></section>
-    <div id="page">
-        <div id="nav-footer">
-            <footer>
-                <div class="ah-footer clearfix">
-                    <div>
-                        <a href="index.html" class="home cur">
-                            <img src="images/home-new-h@2x.png" alt="">
-                            <p class="f-txt">首页</p>
-                        </a>
-                        <a  class="maintain">
-                            <i></i>
-                            <p class="f-txt">保养</p>
-                        </a>
-                        <a href="/" class="user">
-                            <img src="images/user@2x.png" alt="">
-                            <p class="f-txt">我的</p>
-                        </a>
-                    </div>
+
+
+    <div id="nav-footer">
+        <footer>
+            <div class="ah-footer clearfix">
+                <div>
+                    <a href="index.html" class="home cur">
+                        <img src="images/home-new-h@2x.png" alt="">
+                        <p class="f-txt">首页</p>
+                    </a>
+                    <a href="productL2M.html" class="maintain">
+                        <i></i>
+                        <p class="f-txt">保养</p>
+                    </a>
+                    <a href="personalCenter.html" class="user">
+                        <img src="images/user@2x.png" alt="">
+                        <p class="f-txt">我的</p>
+                    </a>
                 </div>
-            </footer>
-        </div>
+            </div>
+        </footer>
     </div>
+
+    <link href="http://wechat.anhui-tech.com/dist/css/min/animation/animate.min.css" type="text/css" rel="stylesheet"></link>
+    
     
 
 
@@ -138,6 +138,7 @@
 </body>
 </html>
 <script src="http://wechat.anhui-tech.com/scripts/lib/zepto.min.js"></script>
+<script src="http://wechat.anhui-tech.com/scripts/frozen.js"></script>
 <script type="text/javascript">
     // window.addEventListener('load', function(){
     //     var myScroll = new fz.Scroll('.bos', {
@@ -145,18 +146,18 @@
     //     });
     // })
 
-    // $(function(){
-    //     $('.order-bottom a').on('mouseover mouseout', function(event) {
-    //         $(this).addClass('on');
-    //     });
-    //     $('#quit_login').on('click',function(){
-    //         new Dialog({
-    //             data: '<div class="state1"><h3 class="title">确定要退出登录吗 (⊙_⊙)？</h3></div>',
-    //             button: ['<span class="btn" data-opt="Y">退出</span>','<span class="btn be" data-opt="F">取消</span>'],
-    //             confirm: function() {
-    //                 window.location.href = '/lgout';
-    //             }
-    //         });
-    //     });
-    // });
+    $(function(){
+        // $('.order-bottom a').on('mouseover mouseout', function(event) {
+        //     $(this).addClass('on');
+        // });
+        $('#quit_login').on('click',function(){
+            new Dialog({
+                data: '<div class="state1"><h3 class="title">确定要退出登录吗 (⊙_⊙)？</h3></div>',
+                button: ['<span class="btn" data-opt="Y">退出</span>','<span class="btn be" data-opt="F">取消</span>'],
+                confirm: function() {
+                    window.location.href = 'index.html';
+                }
+            });
+        });
+    });
 </script>
